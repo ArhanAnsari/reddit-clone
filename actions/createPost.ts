@@ -7,7 +7,7 @@ import { systemPrompt } from "@/prompt";
 import { createClerkToolkit } from "@clerk/agent-toolkit/ai-sdk";
 import { CoreMessage, generateText, tool } from "ai";
 import { auth } from "@clerk/nextjs/server";
-import { openai } from "@ai-sdk/openai";
+import { google } from "@ai-sdk/google";
 import { z } from "zod";
 
 export type PostImageData = {
@@ -246,7 +246,7 @@ export async function createPost({
 
       console.log("Generating AI moderation response");
       const result = await generateText({
-        model: openai("gpt-4o-mini"),
+        model: google("gemini-2.0-flash-001"),
         messages: messages as CoreMessage[],
         // Conditionally inject session claims if we have auth context
         system: toolkit.injectSessionClaims(systemPrompt),

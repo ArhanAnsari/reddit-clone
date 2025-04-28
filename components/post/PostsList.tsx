@@ -8,8 +8,8 @@ async function PostsList() {
 
   return (
     <div className="space-y-4">
-      {posts.map((post) => (
-        <Post key={post._id} post={post} userId={user?.id || null} />
+      {posts.map((post: any) => (
+        <Post key={post._id} post={post} userId={user?.id ?? null} />
       ))}
     </div>
   );
