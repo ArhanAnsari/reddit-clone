@@ -2,8 +2,12 @@ import { getPosts } from "@/sanity/lib/post/getAllPosts";
 import Post from "./Post";
 import { currentUser } from "@clerk/nextjs/server";
 
-async function PostsList() {
-  const posts = await getPosts();
+interface PostsListProps {
+  sort?: 'popular' | 'hot' | 'new' | 'top' | 'rising';
+}
+
+async function PostsList({ sort = 'new' }: PostsListProps) {
+  const posts = await getPosts(sort);
   const user = await currentUser();
 
   return (

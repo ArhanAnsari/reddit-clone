@@ -38,7 +38,7 @@ export default function GlobalError({ error }: Readonly<{ error: Error & { diges
                 <Link href="/">Go Home</Link>
               </Button>
               <Button asChild variant="outline" className="w-full sm:w-auto">
-                <Link href="/r/all">Browse Communities</Link>
+                <Link href="/">Browse Communities</Link>
               </Button>
             </div>
             {process.env.NODE_ENV === 'development' && (

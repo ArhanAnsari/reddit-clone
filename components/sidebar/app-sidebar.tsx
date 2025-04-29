@@ -59,7 +59,7 @@ export async function AppSidebar({
             title: subreddit.title,
             url: `/community/${subreddit.slug}`,
             isActive: false, // Add isActive property with default value
-          })) || [],
+          })) ?? [],
       },
     ],
   };

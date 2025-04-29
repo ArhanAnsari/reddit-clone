@@ -14,6 +14,7 @@ import { ChevronLeftIcon, MenuIcon } from "lucide-react";
 import ReddishLogo from "@/images/Reddish Full.png";
 import ReddishLogoOnly from "@/images/Reddish Logo Only.png";
 import CreatePost from "./CreatePostButton";
+import { ModeToggle } from "@/components/ModeToggle";
 
 function Header() {
   const { toggleSidebar, open, isMobile } = useSidebar();
@@ -50,6 +51,7 @@ function Header() {
 
       {/* Right side */}
       <div className="flex items-center space-x-2">
+        <ModeToggle />
         <CreatePost />
 
         {isBanned && (
