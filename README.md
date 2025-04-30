@@ -95,10 +95,10 @@ OPENAI_API_KEY=your-openai-api-key
 # Clone the repository
 
 # Install dependencies using pnpm
-pnpm install
+npm install
 
 # Start the development server with Turbopack
-pnpm dev
+npm run dev
 
 ```
 
@@ -132,36 +132,10 @@ pnpm dev
 - TypeScript
 - Sanity CMS
 - Clerk Auth
-- OpenAI API
+- Gemini API
 - Tailwind CSS
 - Radix UI
 - Lucide Icons
-
-## Join the World's Best Developer Course & Community Zero to Full Stack Hero! 🚀
-
-### Want to Master Modern Web Development?
-
-This project was built as part of the [Zero to Full Stack Hero](https://www.papareact.com/course) course. Join thousands of developers and learn how to build projects like this and much more!
-
-#### What You'll Learn:
-
-- 📚 Comprehensive Full Stack Development Training
-- 🎯 50+ Real-World Projects
-- 🤝 Access to the PAPAFAM Developer Community
-- 🎓 Weekly Live Coaching Calls
-- 🤖 AI & Modern Tech Stack Mastery
-- 💼 Career Guidance & Interview Prep
-
-#### Course Features:
-
-- ⭐ Lifetime Access to All Content
-- 🎯 Project-Based Learning
-- 💬 Private Discord Community
-- 🔄 Regular Content Updates
-- 👥 Peer Learning & Networking
-- 📈 Personal Growth Tracking
-
-[Join Zero to Full Stack Hero Today!](https://www.papareact.com/course)
 
 ## License
 
@@ -169,4 +143,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ---
 
-Built with ❤️ using Next.js, Sanity, Clerk, and OpenAI
+Built with ❤️ using Next.js, Sanity, Clerk, and Gemini
