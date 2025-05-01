@@ -69,7 +69,7 @@ Thank you for your support!
 - npm, yarn, or pnpm
 - Clerk Account
 - Sanity Account
-- OpenAI API key (for AI moderation)
+- Gemini API key (for AI moderation)
 
 ### Environment Variables
 
@@ -85,8 +85,9 @@ SANITY_API_TOKEN=your-sanity-read-token
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your-clerk-publishable-key
 CLERK_SECRET_KEY=your-clerk-secret-key
 
-# OpenAI (for AI moderation)
-OPENAI_API_KEY=your-openai-api-key
+# Gemini (for AI moderation)
+GEMINI_API_KEY=your-gemini-api-key
+GOOGLE_GENERATIVE_AI_API_KEY=your-gooogle-generative-api-key
 ```
 
 ### Installation
